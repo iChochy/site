@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
-permalink: /docs/privacy_policy/
+permalink: /docs/privacy_policy.html
 ---
 
 # 隐私政策
@@ -56,9 +56,9 @@ g) 其它本应用根据法律、法规或者网站政策认为合适的披露�
 
 五、Cookie的使用
 
-a) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用本应用
+a) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用本应用，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。 
 
-，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。  b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。
+b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。
 
 c) 通过本应用所设cookies所取得的有关信息，将适用本政策。
 

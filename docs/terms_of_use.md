@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms of use
-permalink: /docs/terms_of_use/
+permalink: /docs/terms_of_use.html
 ---
 
 
