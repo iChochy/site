@@ -18,11 +18,14 @@
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
-            {%- if site.wechat -%}
-            <li><image width = "85px"  src = "{{ site.wechat }}"></li>
-            {%- endif -%}
         </ul>
       </div>
+
+        {%- if site.wechat -%}
+        <div class="footer-col footer-col-wechat">
+                <image style = "max-width:80px"  src = "{{ site.wechat }}"> 
+        </div>
+        {%- endif -%}
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
