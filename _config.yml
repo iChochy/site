@@ -7,7 +7,7 @@ date_format: "%Y/%m/%d %H:%M:%S"
 show_excerpts: false
 description: 码农小站，写点Java、Swift和感悟，喜欢的小伙伴请关注公众号:iChochy。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.chochy.cn" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.ichochy.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 baidu_push: true
