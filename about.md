@@ -14,5 +14,5 @@ permalink: /about.html
 - 邮箱：[`iChochy@qq.com`](mailto:iChochy@qq.com)  
 
 请打开微信扫一扫，关注公众号(`iChochy`)    
-![公众号](/assets/img/wx.jpg)
+![公众号](/assets/images/wx.jpg)
 

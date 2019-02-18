@@ -18,15 +18,15 @@ permalink: /index.html
 
 # 软件截图：
 * 锁屏播放  
-![锁屏播放](/assets/img/IMG_1.PNG) 
+![锁屏播放](/assets/images/IMG_1.PNG) 
 
 
 * 锁屏播放  
-![播放列表](/assets/img/IMG_2.PNG) 
+![播放列表](/assets/images/IMG_2.PNG) 
 
 
 * 播放界面  
-![播放界面](/assets/img/IMG_3.PNG) 
+![播放界面](/assets/images/IMG_3.PNG) 
 
 
 
