@@ -20,9 +20,9 @@ wechat: /assets/images/wx.jpg
 # theme: minima
 
 header_pages:
-  - index.md
-  - blog.md
-  - about.md 
+ - main/index.md
+ - main/blog.md
+ - main/about.md 
 
 
 # Build settings
