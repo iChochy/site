@@ -12,6 +12,10 @@ url: "https://www.ichochy.com" # the base hostname & protocol for your site, e.g
 
 baidu_push: true
 
+case_no: 沪ICP备13043073号
+case_url: http://www.miitbeian.gov.cn
+
+
 rss: RSS
 twitter_username: iChochy
 github_username:  iChochy
