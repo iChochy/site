@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jekyll+gitPage部署自己的静态Blog"
+title:  "Jekyll+GitHub Pages部署自己的静态Blog"
 date:   2019-02-13 11:45:00 +0800
 author: "MLeo"
 categories: jekyll github
@@ -125,7 +125,7 @@ categories: jekyll github
 
     ![WX20190215-171119](/assets/images/WX20190215-171638.png)
 
-### 四、创建gitPage项目
+### 四、创建GitHub Pages项目
 
 - 新建一个项目，项目名必须为`<username>.github.io`,如：我的用户名为`iChochy`，项目名为`iChochy.github.io`
 
@@ -133,7 +133,7 @@ categories: jekyll github
 
     ![WX20190215-172254](/assets/images/WX20190215-172254.png)
 
-### 五、将Blog接交到gitHub
+### 五、将Blog接交到GitHub
 - 将本地写好的的`blog` pull到`github`上，在项目设置中打开`GitHub Pages`
 - 
 
