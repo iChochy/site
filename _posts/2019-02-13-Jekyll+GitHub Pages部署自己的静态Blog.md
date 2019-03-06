@@ -167,7 +167,7 @@ categories: jekyll github
 
 - 完成开启后，如下图：
 
-    ![WX20190218-104830](/assets/images/WX20190218-104830-0458287.png)
+    ![WX20190218-104830](/assets/images/WX20190218-104830.png)
 
 
 
