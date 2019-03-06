@@ -25,7 +25,6 @@ wechat: /assets/images/wx.jpg
 
 header_pages:
  - main/index.md
- - main/blog.md
  - main/about.md 
 
 
