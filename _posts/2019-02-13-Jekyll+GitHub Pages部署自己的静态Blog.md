@@ -144,7 +144,7 @@ categories: jekyll github
 
 ### 六、运行Blog
 
-   直接访问项目名(`<username>.github.io`)就可以看你`blog`了，如：[iChochy.github.io](https://iChochy.github.io)
+   直接访问项目名(`<username>.github.io`)就可以看你`blog`了，如：[iChochy.github.io](http://iChochy.github.io)
 
 ### 七、自定义域名
 
