@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">      
       {%- if page.author -%}
- <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>• 
+ <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span><span> ✑ <span> 
       {%- endif -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
@@ -19,19 +19,34 @@ layout: default
     {{ content }}
   </div>
 
+
+<blockquote>
+        <ul style = "list-style-type: none"> 
+                <li> site:<a href = "/"  > {{site.title | escape}} </a> </li>
+                <li> title:<a href = "{{ page.url | relative_url }}"  > {{page.title | escape}} </a> </li>
+        </ul>
+</blockquote>
+ 
 <hr>
-<ul> 
-         <li> title:<a href = "{{ page.url | relative_url }}"  > {{page.title | escape}} </a> </li>
-      {%- if page.author -%}
-        <li>  author: {{ page.author }}</li>
-      {%- endif -%}
-         <li> site:<a href = "/"  > {{site.title | escape}} </a> </li>
-</ul>
 
+<ul>
+{% for category in site.categories %}
+ 
+        {% for pageCategory in page.categories %}
+        
+                {% if category[0] == pageCategory %}
+                        {% for post in category[1] %}
+                                {% if page.url != post.url %}
+                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                {% endif %}
+                        {% endfor %}
+                {% endif %}
+        {% endfor %}
+{% endfor %} 
+</ul> 
 
-  {%- if site.disqus.shortname -%}
+ {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-  {%- endif -%}
+ {%- endif -%}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
