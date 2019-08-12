@@ -61,8 +61,7 @@ try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
 
 ### GitHub:
 
-libminipng: [https://github.com/iChochy/libminipng](https://github.com/iChochy/libminipng)
-
+libminipng: [https://github.com/iChochy/libminipng](https://github.com/iChochy/libminipng)  
 pngquant: [https://github.com/ImageOptim/libimagequant](https://github.com/ImageOptim/libimagequant )  
 lodepng: [https://github.com/lvandeve/lodepng](https://github.com/lvandeve/lodepng)
 
