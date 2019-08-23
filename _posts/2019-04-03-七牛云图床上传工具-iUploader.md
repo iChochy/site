@@ -1,6 +1,7 @@
 ---
+
 layout: post
-title:  "七牛云图床上传工具-iUpload"
+title:  "七牛云图床上传工具-iUploader"
 date:   2019-04-03 08:20:05 +0800
 author: "MLeo"
 categories: app qiniu
@@ -10,8 +11,7 @@ categories: app qiniu
 
 **软件介绍：**
 
-`iUpload`主要功能将图片上传至七牛云，返回 `Markdown` 格式的链接到剪贴板
-
+`iUploader`主要功能将图片上传至七牛云，返回 `Markdown` 格式的链接到剪贴板
 
 **功能介绍：**
 
@@ -35,7 +35,7 @@ categories: app qiniu
 
 **下载：**
 
-[https://github.com/iChochy/iUpload/releases/download/1.0.1/App.dmg](https://github.com/iChochy/iUpload/releases/download/1.0.1/App.dmg)
+[https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg](https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg)
 
 
 
@@ -43,9 +43,9 @@ categories: app qiniu
 
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)                                                                                              
 >
-> 网站：[http://www.chochy.cn](http://www.chochy.cn)
+> 网站：[http://www.ichochy.com](http://www.ichochy.com)
 >
-> GitHub： [https://github.com/iChochy/iUpload]( https://github.com/iChochy/iUpload)
+> GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader)
 
 
 ![Cloud](http://images.chochy.cn/Cloud.png)
