@@ -3,7 +3,7 @@ layout: post
 title:  "libminipng 压缩png的swift-framework"
 date:   2019-08-12 12:25:36 +0800
 author: "MLeo"
-categories: swift c
+categories: swift c pod
 
 ---
 

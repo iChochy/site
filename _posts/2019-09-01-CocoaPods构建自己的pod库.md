@@ -1,20 +1,21 @@
 ---
 
 layout: post
-title:  "CocoaPods 构建自己的 Pod 库.md"
+title:  "CocoaPods 构建自己的 Pod 库"
 date:   2019-09-01 12:32:55 +0800
 author: "MLeo"
-categories:  pod
+categories: pod
 
 ---
 
 # 构建自己的 Pod 库
 
-### 构建 `Pod` 库  
+### 一、创建 `Podspec` 
 有两种方式：  
 1. 使用命令 `pod lib create mylib` 创建一套完整的 Pod 库模版
 2. 使用命令 `pod spec create mylib` 创建 `Podspec` 的配置文件   
-### 配置 `Podspec`文件
+
+### 二、配置 `Podspec`
 
 官网说明：[https://guides.cocoapods.org/syntax/podspec.html#specification](https://guides.cocoapods.org/syntax/podspec.html#specification)  
 
@@ -61,27 +62,25 @@ end
 
 *注：如果未指定公共头文件，那么`source_files`中的所有文件将被视为公共头文件*
 
-### 验证 `Podspec`
+### 三、验证 `Podspec`
 ```
 pod lib lint  	//本地验证
 pod spec lint 	//在线验证，检查外部仓库和相关标签
 ```
-如果出现警告(`WARN`) ，可以添加`--allow-warnings`忽略警告
+如果出现警告(`WARN`) ，可以添加`--allow-warnings`忽略警告  
 如果出现错误(`ERROR`)，可以添加 `--verbose`，查看详情
 
-### 创建账号  
+### 四、创建账号  
 1. 注册账号：  
 	`pod trunk register iChochy@qq.com 'iChochy' --description='macbook'`
 2. 激活账号：  
-	完成注册后进入邮件点击激活链接进行激活操作  
-3. 查看账号：
+  完成注册后进入邮件点击激活链接进行激活操作  
+3. 查看账号：  
 	`pod trunk me`
 
-### 发布
-`pod trunk push [NAME.podspec]`  
-	将您的Podspec部署到Trunk，并公开发布  
-`pod repo push REPO [NAME.podspec]`  
-	将您的Podspec部署到私有仓库    
+### 五、发布 `Podspec`
+`pod trunk push [NAME.podspec]` 将您的Podspec部署到Trunk，并公开发布  
+`pod repo push REPO [NAME.podspec]`  将您的Podspec部署到私有仓库  
 
 *注：如果出现警告(`WARN`) ，可以添加`--allow-warnings`忽略警告*
 
