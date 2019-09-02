@@ -7,43 +7,67 @@ categories: swift c
 
 ---
 
-# ![Cloud](http://images.ichochy.com/Cloud.png)  iUploader
 
-### 软件介绍：  
-`iUploader`主要功能将文件上传至七牛云，返回 `Markdown` 格式的链接到剪贴板  
-
-
-### 功能介绍：  
-1. 图片本地压缩
-2. 图片右键上传
-3. 图片截取上传
-4. 图片复制上传
-5. 图片拖拽上传
-6. https加密上传
-
-### 开发：  
-继承七牛云SDK，使用`Swift`开发，App自签上传凭证，自动选择存储区域，通过https加密上传。  
-
-### 截图：  
-**菜单**  
-![15665509097289961](http://images.ichochy.com/15665509097289961.png)  
-
-**配置**  
-![15665510536547632](http://images.ichochy.com/15665510536547632.png)  
+# libminipng
+通过lodepng解析png图片，使用pngquant算法进行压缩的swift-framework
 
 
-### 更新：  
-1. 剪贴板监控，截图自动上传
-2. 引入`pngquant`， 提高`png`图片的压缩比，减少流量的损失，快速完成图片的加载
-3. 添加历史记录，方便随时查看使用上传文件，保留十条
-4. 完善文件上传流程，不限于图片的上传
-5. 完善多文件上传，统一完成上传
-6. 优化进度加载展示，菜单逻辑调整
+### 方法说明：
 
-### 下载：  
-[iUploader.dmg-GitHub](https://github.com/iChochy/iUploader/releases/download/2.0.5/iUploader.dmg)   
-[iUploader.dmg-七牛云](http://www.ichochy.com/iUploader.dmg)  
-[https://github.com/iChochy/iUploader/releases/download/2.0.5/iUploader.dmg](https://github.com/iChochy/iUploader/releases/download/2.0.5/iUploader.dmg)   
+```swift
+/// 通过PNG图片Data压缩
+///
+/// - Parameters:
+///   - data: PNG图片Data
+///   - maximum: 压缩率，0-100,100为最好
+/// - Returns: 压缩后的PNG图片Data
+public static func data2Data(_ data:Data,_ maximum:Int) -> Data?
+```
+
+```swift
+/// 通过PNG图片路径压缩
+///
+/// - Parameters:
+///   - path: PNG图片路径
+///   - maximum: 压缩率，0-100,100为最好
+/// - Returns: 压缩后的PNG图片Data
+public static func path2Data(_ path:String,_ maximum:Int) -> Data?
+```
+
+
+### Cocoapods
+
+**Podfile 添加 `pod "libminipng"`**
+
+**运行命令  `pod install`**
+
+
+### 使用
+
+ **引入 `import libminipng`**
+
+**编写代码：**
+
+```swift
+let path:String = "http://images.chochy.cn/Cloud.png"
+let data:Data = try! Data.init(contentsOf: URL.init(string: path)!)
+let maximum:Int = 100 // 压缩率，0-100,100为最好
+let result:Data? = minipng.data2Data(data,maximum)
+try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
+```
+
+```swift
+let path:String = "/Users/mleo/Cloud.png"
+let maximum:Int = 100 // 压缩率，0-100,100为最好
+let result:Data? = minipng.path2Data(path, maximum)
+try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
+```
+
+---
+### GitHub:  
+libminipng: [https://github.com/iChochy/libminipng](https://github.com/iChochy/libminipng)  
+pngquant: [https://github.com/ImageOptim/libimagequant](https://github.com/ImageOptim/libimagequant)  
+lodepng: [https://github.com/lvandeve/lodepng](https://github.com/lvandeve/lodepng)  
 
 ---
 ### 联系方系：  
