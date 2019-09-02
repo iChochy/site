@@ -38,15 +38,10 @@ categories: app qiniu
 [https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg](https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg)
 
 
+![Cloud](http://images.ichochy.com/Cloud.png)
 
-**联系方系：**
-
-> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)                                                                                              
->
-> 网站：[http://www.ichochy.com](http://www.ichochy.com)
->
-> GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader)
-
-
-![Cloud](http://images.chochy.cn/Cloud.png)
-
+---
+### 联系方系：  
+> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
+> 网站：[http://www.ichochy.com](http://www.ichochy.com)  
+> GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader) 
