@@ -72,5 +72,5 @@ lodepng: [https://github.com/lvandeve/lodepng](https://github.com/lvandeve/lodep
 ---
 ### 联系方系：  
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[http://www.ichochy.com](http://www.ichochy.com)  
+> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
 > GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader)    

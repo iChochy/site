@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   spec.name         = 'libminipng'
   spec.version      = '0.0.5'
   spec.license      = { :type => 'MIT' }
-  spec.homepage     = 'http://www.ichochy.com'
+  spec.homepage     = 'https://www.ichochy.com'
   spec.authors      = { 'iChochy' => 'iChochy@qq.com' }
   spec.summary      = 'Swift library that compresses PNG'
   spec.source       = { :git => 'https://github.com/iChochy/libminipng.git', :tag => 'v3.1.0' }
@@ -87,5 +87,5 @@ pod spec lint 	//在线验证，检查外部仓库和相关标签
 ---
 ### 联系方系：  
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[http://www.ichochy.com](http://www.ichochy.com)  
+> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
 > GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   
