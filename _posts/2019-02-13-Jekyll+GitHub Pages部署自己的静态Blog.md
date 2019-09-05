@@ -172,7 +172,7 @@ categories: jekyll github
 
 
 ---
-### 联系方系：  
+### 联系方式：  
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
 > 网站：[https://www.ichochy.com](https://www.ichochy.com)  
 > GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader) 

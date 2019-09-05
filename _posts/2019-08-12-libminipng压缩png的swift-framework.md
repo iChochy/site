@@ -70,7 +70,7 @@ pngquant: [https://github.com/ImageOptim/libimagequant](https://github.com/Image
 lodepng: [https://github.com/lvandeve/lodepng](https://github.com/lvandeve/lodepng)  
 
 ---
-### 联系方系：  
+### 联系方式：  
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
 > 网站：[https://www.ichochy.com](https://www.ichochy.com)  
 > GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader)    
