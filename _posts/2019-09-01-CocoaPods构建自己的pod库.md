@@ -4,7 +4,8 @@ layout: post
 title:  "CocoaPods 构建自己的 Pod 库"
 date:   2019-09-01 12:32:55 +0800
 author: "MLeo"
-categories: pod
+category: blog 
+tags: pod
 
 ---
 
@@ -83,9 +84,3 @@ pod spec lint 	//在线验证，检查外部仓库和相关标签
 `pod repo push REPO [NAME.podspec]`  将您的Podspec部署到私有仓库  
 
 *注：如果出现警告(`WARN`) ，可以添加`--allow-warnings`忽略警告*
-
----
-### 联系方式：  
-> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
-> GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   

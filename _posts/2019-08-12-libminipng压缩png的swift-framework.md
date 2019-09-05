@@ -3,7 +3,8 @@ layout: post
 title:  "libminipng 压缩png的swift-framework"
 date:   2019-08-12 12:25:36 +0800
 author: "MLeo"
-categories: swift c pod
+category: blog 
+tags: swift c pod
 
 ---
 
@@ -69,8 +70,3 @@ libminipng: [https://github.com/iChochy/libminipng](https://github.com/iChochy/l
 pngquant: [https://github.com/ImageOptim/libimagequant](https://github.com/ImageOptim/libimagequant)  
 lodepng: [https://github.com/lvandeve/lodepng](https://github.com/lvandeve/lodepng)  
 
----
-### 联系方式：  
-> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
-> GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader)    

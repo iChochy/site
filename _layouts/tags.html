@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <ul class="post-list" id = "post-list">
+  </ul>
+</div>
+
+
+<div class="side">
+  <ul>
+    {% for tag in site.tags %}
+    <li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+<script>
+    var data = "{ {% for tag in site.tags %} \"{{tag[0]}}\":[ {%for post in tag[1] %} { \"title\": \"{{post.title | escape}}\", \"excerpt\": \"{{post.excerpt | strip_html | strip_newlines | strip }}\", \"date\": \"{{post.date | date:site.date_format}}\", \"url\": \"{{post.url | relative_url}}\" }, {%endfor%} ], {% endfor %} }"
+    var data = data.replace(/,\s+]/g,"]").replace(/,\s+}/g,"}").replace(/\t+/g,"")
+    const posts = JSON.parse(data)
+    const hash = window.location.hash.replace("#","");
+    displayPage(hash)
+    window.addEventListener('hashchange',function(){
+      const hash = window.location.hash.replace("#","");
+      displayPage(hash)
+    })
+    function displayPage(hash){
+      hash = decodeURI(hash)
+      if(!hash){
+        hash = "{{site.tags.first[0]}}"
+      }
+      var html = build(posts[hash])
+      var ul = document.getElementById("post-list");
+      ul.innerHTML = html
+    }
+    function build(posts){
+      var list = new Array();
+      posts.forEach(function(post){
+        list.push("<li><h3><a class=\"post-link\" href=\"")
+        list.push(post.url)
+        list.push("\">")
+        list.push(post.title)
+        list.push("</a></h3>")
+        list.push("<span class=\"post-meta\">")
+        list.push(post.date)
+        list.push("</span><p>")
+        list.push(post.excerpt)
+        list.push("</p></li>")
+      })
+      return list.join("")
+    }
+  </script>

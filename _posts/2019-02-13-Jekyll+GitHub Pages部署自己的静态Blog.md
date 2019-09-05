@@ -3,7 +3,8 @@ layout: post
 title:  "Jekyll+GitHub Pages部署自己的静态Blog"
 date:   2019-02-13 11:45:00 +0800
 author: "MLeo"
-categories: jekyll github
+category: blog 
+tags: jekyll github
 ---
 
 ### 一、安装jekyll
@@ -106,7 +107,7 @@ categories: jekyll github
     layout: post                       --指定模板
     title:  "blog"                     --标题
     date:   2019-02-13 15:02:11 +0800  --时间
-    categories: blog                   --分类
+    tags: blog                   --分类
 
     ---
                                        --内容
@@ -168,12 +169,4 @@ categories: jekyll github
 - 完成开启后，如下图：
 
     ![WX20190218-104830](/assets/images/WX20190218-104830.png)
-
-
-
----
-### 联系方式：  
-> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
-> GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader) 
 

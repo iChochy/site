@@ -4,7 +4,8 @@ layout: post
 title:  "七牛云图床上传工具-iUploader"
 date:   2019-04-03 08:20:05 +0800
 author: "MLeo"
-categories: app qiniu
+category: blog 
+tags: app qiniu
 
 ---
 
@@ -28,15 +29,10 @@ categories: app qiniu
 
 
 
-**下载：**
+**下载![Cloud](http://images.ichochy.com/Cloud.png)：**
 
 [https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg](https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg)
 
 
-![Cloud](http://images.ichochy.com/Cloud.png)
 
----
-### 联系方式：  
-> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
-> GitHub： [https://github.com/iChochy/iUploader]( https://github.com/iChochy/iUploader) 
+

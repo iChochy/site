@@ -3,7 +3,8 @@ layout: post
 title:  "Mac 将 App 程序打包成为 dmg"
 date:   2019-08-23 08:32:36 +0800
 author: "MLeo"
-categories: app dmg swift mac
+category: blog 
+tags: app dmg swift mac
 
 ---
 
@@ -58,11 +59,3 @@ ln -s /Applications Applications
 
 ### 5. 完成打包  
 **至此，完成了App打包DMG，可以进行共享发布了**
-
-
-
----
-### 联系方系：  
-> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[https://www.ichochy.com](https://www.ichochy.com)  
-> GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   
