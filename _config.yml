@@ -11,6 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.ichochy.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 baidu_push: true
+360_push: true
 
 case_no: 沪ICP备19030221号
 case_url: http://www.miitbeian.gov.cn
