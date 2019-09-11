@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
+  word-break: break-all;
   color: $brand-color;
   text-decoration: none;
 
@@ -159,6 +160,7 @@ code {
 }
 
 code {
+  word-break: break-all;
   padding: 1px 5px;
 }
 
@@ -258,7 +260,6 @@ pre {
  */
 table {
   margin-bottom: $spacing-unit;
-  width: 100%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
@@ -269,7 +270,7 @@ table {
     }
   }
   th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: ($spacing-unit / 5) ($spacing-unit / 4);
   }
   th {
     background-color: lighten($grey-color-light, 3%);
@@ -277,6 +278,7 @@ table {
     border-bottom-color: darken($grey-color-light, 12%);
   }
   td {
+    overflow: auto;
     border: 1px solid $grey-color-light;
   }
 }
