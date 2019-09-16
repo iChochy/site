@@ -1,23 +1,36 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="home">
 
   {{ content }}
 
+  <div class="tags">
+      TAGS：
+      <ul>
+        {% for tag in site.tags %}
+        <li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
+        {% endfor %}
+      </ul>
+  </div>
+
   <ul class="post-list" id = "post-list">
+      {%- for post in site.posts limit:5 -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <hr>
+        {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {%- if site.show_excerpts -%}
+        <p>{{ post.excerpt | strip_html | strip_newlines | escape | strip }}</p>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
   </ul>
-</div>
-
-
-<div class="side">
-  <ul>
-    {% for tag in site.tags %}
-    <li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
 
 
 <script>
@@ -25,16 +38,15 @@ layout: default
     var data = data.replace(/,\s+]/g,"]").replace(/,\s+}/g,"}").replace(/\t+/g,"")
     const posts = JSON.parse(data)
     const hash = window.location.hash.replace("#","");
-    displayPage(hash)
+    if(hash){
+      displayPage(hash)
+    }
     window.addEventListener('hashchange',function(){
       const hash = window.location.hash.replace("#","");
       displayPage(hash)
     })
     function displayPage(hash){
       hash = decodeURI(hash)
-      if(!hash){
-        hash = "{{site.tags.first[0]}}"
-      }
       var html = build(posts[hash])
       var ul = document.getElementById("post-list");
       ul.innerHTML = html
@@ -46,7 +58,7 @@ layout: default
         list.push(post.url)
         list.push("\">")
         list.push(post.title)
-        list.push("</a></h3>")
+        list.push("</a></h3><hr>")
         list.push("<span class=\"post-meta\">")
         list.push(post.date)
         list.push("</span><p>")

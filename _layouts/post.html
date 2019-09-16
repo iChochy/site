@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class = "home">
+<div class = "content">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
         <header class="post-header">
@@ -23,6 +23,8 @@ layout: default
 
         <div class="post-content e-content" itemprop="articleBody">
                 {{ content }}
+        </div>
+        <div class = "contact">
                 <hr />
                 <h3 id="联系方式">联系方式：</h3>
                 <blockquote>
@@ -33,6 +35,14 @@ layout: default
                         </p>
                 </blockquote>
         </div>
+        <div class="tags">
+                TAGS：
+                <ul>
+                        {% for tag in page.tags %}
+                                <li><a href="{{site.url}}/tags.html/#{{tag}}">{{tag}}</a></li>
+                        {% endfor %}
+                </ul>
+        </div>
 
         {%- if site.disqus.shortname -%}
         {%- include disqus_comments.html -%}
@@ -40,8 +50,6 @@ layout: default
 
 </article>
 </div>
-
-
 
 {% assign posts = "" | split: ", " %}
 {% for current in page.tags %}
@@ -55,6 +63,7 @@ layout: default
 {% assign urls = posts | map: "url" | uniq %}
 
 <div class = "side">  
+        推荐：
         <ul> 
         {% for url in urls %} 
                 {% for post in site.posts %}
