@@ -6,7 +6,7 @@ email: iChochy@qq.com
 date_format: "%Y/%m/%d %H:%M:%S"
 show_excerpts: true
 timezone: Asia/Shanghai
-description: 码农小站，写点Java、Swift和感悟，喜欢的小伙伴请关注公众号:iChochy
+description: 码农小站，写点Java、Swift和感悟；微信公众号：iChochy
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.ichochy.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -14,7 +14,7 @@ baidu_push: true
 360_push: true
 
 case_no: 沪ICP备19030221号
-case_url: http://www.miitbeian.gov.cn
+case_url: http://beian.miit.gov.cn
 
 
 rss: RSS
@@ -22,10 +22,12 @@ twitter_username: iChochy
 github_username:  iChochy
 wechat: /assets/images/wx.jpg
 
+paginate: 5
+
 # theme: minima
 
 header_pages:
- - main/index.md
+ - index.html
  - main/tags.md
  - main/about.md 
 
@@ -36,5 +38,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
 
 

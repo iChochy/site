@@ -12,8 +12,8 @@ layout: default
                         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                                 <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
                         </span>
-                        <span> ✑ </span>
                         {%- endif -%}
+                        <span>  </span>
                         <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                                 {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
                                 {{ page.date | date: date_format }}
@@ -24,31 +24,40 @@ layout: default
         <div class="post-content e-content" itemprop="articleBody">
                 {{ content }}
         </div>
-        <div class = "contact">
-                <hr />
-                <h3 id="联系方式">联系方式：</h3>
-                <blockquote>
-                        <p>
-                                邮箱：<a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
-                                网站：<a href="{{site.url}}">{{site.url}}</a><br />
-                                源文：<a href="{{ page.url | absolute_url }}"> {{page.url | absolute_url | url_decode}} </a>
-                        </p>
-                </blockquote>
-        </div>
-        <div class="tags">
-                TAGS：
-                <ul>
-                        {% for tag in page.tags %}
-                                <li><a href="{{site.url}}/tags.html/#{{tag}}">{{tag}}</a></li>
-                        {% endfor %}
-                </ul>
-        </div>
-
-        {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
-        {%- endif -%}
-
 </article>
+</div>
+<hr>
+<div class = "contact">
+        <h3 id="联系方式">联系方式：</h3>
+        <blockquote>
+                <p>
+                        邮箱：<a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+                        网站：<a href="{{site.url}}">{{site.url}}</a><br />
+                        源文：<a href="{{ page.url | absolute_url }}"> {{page.url | absolute_url | url_decode}} </a>
+                </p>
+        </blockquote>
+</div>
+
+<div class = "pagination">
+        <div class = "previous">
+        {% if page.previous %}
+                <a href = "{{page.previous.url}}">上一篇:{{page.previous.title}}</a>
+        {% endif %}
+        </div>
+        <div class = "next">
+        {% if page.next %}
+                <a href = "{{page.next.url}}">下一篇:{{page.next.title}}</a>
+        {% endif %}
+        </div>
+</div>
+
+<div class="tags">
+        TAGS：
+        <ul>
+                {% for tag in page.tags %}
+                        <li><a href="{{site.url}}/tags.html/#{{tag}}">{{tag}}</a></li>
+                {% endfor %}
+        </ul>
 </div>
 
 {% assign posts = "" | split: ", " %}
@@ -60,9 +69,9 @@ layout: default
         {% endfor %}
 {% endfor %}
 
-{% assign urls = posts | map: "url" | uniq %}
+{% assign urls = posts | map: "url" | uniq | limit:5 %}
 
-<div class = "side">  
+<div class = "top"> 
         推荐：
         <ul> 
         {% for url in urls %} 
@@ -74,3 +83,7 @@ layout: default
         {% endfor%} 
         </ul>
 </div>
+
+{%- if site.disqus.shortname -%}
+{%- include disqus_comments.html -%}
+{%- endif -%}

@@ -135,14 +135,10 @@
 }
 
 .footer-col-1 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width:         calc(20% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+  width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-wechat {
-  width: -webkit-calc(15% - (#{$spacing-unit} / 2));
-  width:         calc(15% - (#{$spacing-unit} / 2));
-}
 .footer-col-2 {
   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
   width:         calc(20% - (#{$spacing-unit} / 2));
@@ -197,7 +193,7 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit/2;
+    margin-bottom: $spacing-unit;
   }
 }
 
@@ -217,7 +213,7 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit/2;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
@@ -231,7 +227,7 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit/2;
+  margin-bottom: $spacing-unit;
 
   h2 {
     @include relative-font-size(2);

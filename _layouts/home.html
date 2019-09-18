@@ -2,21 +2,20 @@
 layout: page
 ---
 
-  
   {{ content }}
-
+  
   {%- if site.posts.size > 0 -%}
   <ul class="post-list">
-    {%- for post in site.posts -%}
+    {%- for post in paginator.posts -%}
     <li>
+      <hr>
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
       <h3>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>
-      <hr>
-      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
       {%- if site.show_excerpts -%}
       <p>{{ post.excerpt | strip_html | strip_newlines | escape | strip }}</p>
       {%- endif -%}
@@ -24,4 +23,17 @@ layout: page
     {%- endfor -%}
   </ul>
   {%- endif -%}
+
+<div class="pagination">
+      {% if paginator.previous_page %}
+      <div class="previous">
+        <a href="{{ paginator.previous_page_path }}">上一页</a>
+      </div>
+      {% endif %}
+      {% if paginator.next_page %}
+      <div class="next">
+        <a href="{{ paginator.next_page_path }}">下一页</a>
+      </div>
+      {% endif %}
+</div>
 

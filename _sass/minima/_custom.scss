@@ -1,0 +1,65 @@
+
+.tags {
+    margin-bottom: 30px;
+    ul  {
+        list-style-type: none;
+        margin: 5px;
+        > li {
+            margin: 5px;
+            padding: 0px 5px;
+            box-shadow: 0px 0px 10px 5px gainsboro;
+            border-radius: 10px; 
+            display: inline-block;
+            > a{
+                text-decoration: blink;
+            }
+        }
+    }
+}
+.content img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 5px gainsboro;
+    border-radius: 5px;
+}
+
+code {
+    word-break: break-all;
+}
+
+a {
+    word-break: break-all;
+}
+
+
+.pagination {
+    margin-bottom: 30px;
+    .previous{
+        margin: 5px;
+        float: left;
+    }
+    .next{
+        @include media-query($on-laptop) {
+            float: left;
+        }
+        margin: 5px;
+        float: right;
+    }
+    @extend %clearfix;
+}
+
+
+.post-list{
+    h3{
+        margin: 0px;
+    }
+    p{
+        margin: 0px;
+    }
+    @include media-query($on-laptop) {
+        li{
+            padding: 5px;
+            box-shadow: 0px 0px 10px 5px gainsboro;
+        }
+    }
+}

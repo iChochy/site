@@ -18,14 +18,11 @@
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
+            {%- if site.case_no -%}
+            <li><a href="{{ site.case_url }}">{{ site.case_no }}</a></li>
+            {%- endif -%}
         </ul>
       </div>
-
-        {%- if site.wechat -%}
-        <div class="footer-col footer-col-wechat">
-                <image style = "max-width:80px"  src = "{{ site.wechat }}"> 
-        </div>
-        {%- endif -%}
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
@@ -33,15 +30,9 @@
       
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
-         {%- if site.case_no -%}
-        <p><a href="{{ site.case_url }}">{{ site.case_no }}</a></p>
-         {%- endif -%}
       </div>
-
    </div>
-
   </div>
-
 </footer>
 
 {%- if jekyll.environment == 'production' and site.baidu_push -%}
