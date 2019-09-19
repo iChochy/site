@@ -8,7 +8,7 @@ layout: page
   <div class="tags">
       TAGS：
       <ul>
-        {% for tag in site.tags %}
+        {% for tag in site.tags reversed %}
         <li><a href="#{{ tag[0] }}">{{ tag[0] }}</a></li>
         {% endfor %}
       </ul>
@@ -17,7 +17,6 @@ layout: page
   <ul class="post-list" id = "post-list">
       {%- for post in site.posts limit:5 -%}
       <li>
-        <hr>
         {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
@@ -55,7 +54,6 @@ layout: page
       var list = new Array();
       posts.forEach(function(post){
         list.push("<li>")
-        list.push("<hr>")
         list.push("<span class=\"post-meta\">")
         list.push(post.date)
         list.push("</span>")

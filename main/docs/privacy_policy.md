@@ -2,6 +2,7 @@
 layout: page
 title: Privacy Policy
 permalink: /docs/privacy_policy.html
+published: false
 ---
 
 # 隐私政策

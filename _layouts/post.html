@@ -23,30 +23,29 @@ layout: default
 
         <div class="post-content e-content" itemprop="articleBody">
                 {{ content }}
+                <div class = "contact">
+                        <h3 id="联系方式">联系方式：</h3>
+                        <blockquote>
+                                <p>
+                                        邮箱：<a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+                                        网站：<a href="{{site.url}}">{{site.url}}</a><br />
+                                        源文：<a href="{{ page.url | absolute_url }}"> {{page.url | absolute_url | url_decode}} </a>
+                                </p>
+                        </blockquote>
+                </div>
         </div>
 </article>
-</div>
-<hr>
-<div class = "contact">
-        <h3 id="联系方式">联系方式：</h3>
-        <blockquote>
-                <p>
-                        邮箱：<a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
-                        网站：<a href="{{site.url}}">{{site.url}}</a><br />
-                        源文：<a href="{{ page.url | absolute_url }}"> {{page.url | absolute_url | url_decode}} </a>
-                </p>
-        </blockquote>
 </div>
 
 <div class = "pagination">
         <div class = "previous">
         {% if page.previous %}
-                <a href = "{{page.previous.url}}">上一篇:{{page.previous.title}}</a>
+                <a href = "{{page.previous.url}}"><span>上一篇</span>{{page.previous.title}}</a>
         {% endif %}
         </div>
         <div class = "next">
         {% if page.next %}
-                <a href = "{{page.next.url}}">下一篇:{{page.next.title}}</a>
+                <a href = "{{page.next.url}}"><span>下一篇</span>{{page.next.title}}</a>
         {% endif %}
         </div>
 </div>
@@ -60,7 +59,7 @@ layout: default
         </ul>
 </div>
 
-{% assign posts = "" | split: ", " %}
+{% assign posts = "" | split: "," %}
 {% for current in page.tags %}
         {% for tag in site.tags %}
                 {% if current == tag[0] %}
@@ -69,12 +68,12 @@ layout: default
         {% endfor %}
 {% endfor %}
 
-{% assign urls = posts | map: "url" | uniq | limit:5 %}
+{% assign urls = posts | map: "url" | uniq %}
 
 <div class = "top"> 
         推荐：
         <ul> 
-        {% for url in urls %} 
+        {% for url in urls limit:5 %} 
                 {% for post in site.posts %}
                         {% if url == post.url %}
                         <li><a href="{{ post.url }}">{{ post.title }}</a></li>

@@ -2,6 +2,7 @@
 layout: page
 title: Terms of use
 permalink: /docs/terms_of_use.html
+published: false
 ---
 
 
