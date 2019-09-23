@@ -1,14 +1,13 @@
 ---
+title: Mac 将 App 程序打包成为 dmg
 layout: post
-title:  "Mac 将 App 程序打包成为 dmg"
-date:   2019-08-23 08:32:36 +0800
-author: "MLeo"
-category: blog 
+date: '2019-08-23 08:32:36 +0800'
+author: MLeo
+category: blog
 tags: app dmg swift mac
-
 ---
 
-# App to DMG 打包流程  
+用最简单的打包方式，将自己开发的`App`打包成为`DMG`，实现共享分发，快速安装
 
 ### 1. 新建DMG  
 **打开磁盘工具，新建DMG**  

@@ -29,7 +29,7 @@ layout: default
                                 <p>
                                         邮箱：<a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a><br />
                                         网站：<a href="{{site.url}}">{{site.url}}</a><br />
-                                        源文：<a href="{{ page.url | absolute_url }}"> {{page.url | absolute_url | url_decode}} </a>
+                                        源文：<a href="{{ page.url | absolute_url }}">{{page.url | absolute_url | url_decode}}</a>
                                 </p>
                         </blockquote>
                 </div>
@@ -40,12 +40,12 @@ layout: default
 <div class = "pagination">
         <div class = "previous">
         {% if page.previous %}
-                <a href = "{{page.previous.url}}"><span>上一篇</span>{{page.previous.title}}</a>
+                <a href = "{{page.previous.url}}"><span class = "left">上一篇</span>{{page.previous.title}}</a>
         {% endif %}
         </div>
         <div class = "next">
         {% if page.next %}
-                <a href = "{{page.next.url}}"><span>下一篇</span>{{page.next.title}}</a>
+                <a href = "{{page.next.url}}"><span class = "right">下一篇</span>{{page.next.title}}</a>
         {% endif %}
         </div>
 </div>

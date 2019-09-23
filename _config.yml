@@ -13,6 +13,10 @@ url: "https://www.ichochy.com" # the base hostname & protocol for your site, e.g
 baidu_push: true
 360_push: true
 
+google_analytics: UA-148465786-1
+
+baidu_analytics: 6c96b4a33763ee94253645ea9215240b
+
 case_no: 沪ICP备19030221号
 case_url: http://beian.miit.gov.cn
 
@@ -39,5 +43,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-admin
 
 

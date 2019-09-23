@@ -46,28 +46,50 @@ article{
 
 .pagination {
     margin-bottom: $spacing-unit / 2;
-    span {
-        margin: 10px;
-        padding: 5px 10px;
-        border-radius: 5px; 
-        background-color: $brand-color;
-        color: #222;
-        text-shadow: 0 1px 0 rgba(255,255,255,0.3);
-    }
-    span:hover{
-        background-color: $brand-color-hover;
-    }
     .previous{
-        margin: 5px;
         float: left;
     }
     .next{
-        margin: 5px;
         @include media-query($on-laptop) {
             float: left;
         }
         float: right;
     }
+    span {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 5px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,0.5);
+        background-color: #767676;
+    }
+    span.left::before{
+        content: '\2039';
+        top: 4px;
+        left: -8px;
+        position: relative;
+        font-size: 36px;
+        color: #222;
+        font-weight: 500;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    }
+    span.right::after{
+        content: '\203A';
+        top: 4px;
+        left: 8px;
+        position: relative;
+        font-size: 36px;
+        color: #222;
+        font-weight: 500;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    }
+    span:hover{
+        color: #fff;
+        background-color: #888;
+    }
+
     @extend %clearfix;
 }
 

@@ -1,15 +1,13 @@
 ---
-
+title: CocoaPods 构建自己的 Pod 库
 layout: post
-title:  "CocoaPods 构建自己的 Pod 库"
-date:   2019-09-01 12:32:55 +0800
-author: "MLeo"
-category: blog 
+date: '2019-09-01 12:32:55 +0800'
+author: MLeo
+category: blog
 tags: pod
-
 ---
 
-# 构建自己的 Pod 库
+构建一个自己的库供其它人使用是不是一件很酷(苦)的事情，通过[`CocoaPods`](https://cocoapods.org/) 可以快捷的构建自己库，并向全世界分享你的成果
 
 ### 一、创建 `Podspec` 
 有两种方式：  

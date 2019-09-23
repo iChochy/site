@@ -26,12 +26,12 @@ layout: page
 <div class="pagination">
       {% if paginator.previous_page %}
       <div class="previous">
-        <a href="{{ paginator.previous_page_path }}"><span>上一页</span></a>
+        <a href="{{ paginator.previous_page_path }}"><span class = "left">上一页</span></a>
       </div>
       {% endif %}
       {% if paginator.next_page %}
       <div class="next">
-        <a href="{{ paginator.next_page_path }}"><span>下一页</span></a>
+        <a href="{{ paginator.next_page_path }}"><span class = "right">下一页</span></a>
       </div>
       {% endif %}
 </div>

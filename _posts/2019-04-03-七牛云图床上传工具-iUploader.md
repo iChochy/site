@@ -1,18 +1,13 @@
 ---
-
+title: 七牛云图床上传工具-iUploader
 layout: post
-title:  "七牛云图床上传工具-iUploader"
-date:   2019-04-03 08:20:05 +0800
-author: "MLeo"
-category: blog 
+date: '2019-04-03 08:20:05 +0800'
+author: MLeo
+category: blog
 tags: app qiniu
-
 ---
 
-
-**软件介绍：**
-
-`iUploader`主要功能将图片上传至七牛云，返回 `Markdown` 格式的链接到剪贴板
+[`iUploader`](https://www.ichochy.com)主要功能将图片上传至七牛云，返回 `Markdown` 格式的链接到剪贴板
 
 **功能介绍：**
 
@@ -32,7 +27,3 @@ tags: app qiniu
 **下载![Cloud](http://images.ichochy.com/Cloud.png)：**
 
 [https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg](https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg)
-
-
-
-
