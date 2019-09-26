@@ -187,7 +187,35 @@
  * Posts
  */
 .post-header {
+  margin: 20px 0;
+  margin-left: -40px;
+  padding: 30px 40px 10px;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.3);
+  background-image: linear-gradient(to bottom, #7e6d42 0%, #5c4e35 100%);
   margin-bottom: $spacing-unit / 2;
+}
+
+
+.post-header::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  border-color: transparent #5c4e35 #5c4e35 transparent;
+  border-style: solid;
+  border-width: 5px;
+  width: 0;
+  height: 0;
+}
+
+@include media-query($on-palm) {
+  .post-header {
+    margin-left: -20px;
+    margin-right: -18px;
+    padding: 20px 20px 5px;
+  }
 }
 
 .post-title {
