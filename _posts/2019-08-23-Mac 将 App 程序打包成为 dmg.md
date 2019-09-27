@@ -1,7 +1,7 @@
 ---
 title: Mac 将 App 程序打包成为 dmg
 layout: post
-date: '2019-08-23 08:32:36 +0800'
+date: 2019-08-23 08:32:36 +0800
 author: MLeo
 category: blog
 tags: app dmg swift mac

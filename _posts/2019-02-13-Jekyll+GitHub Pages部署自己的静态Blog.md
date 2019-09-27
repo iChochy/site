@@ -1,11 +1,13 @@
 ---
+title: Jekyll+GitHub Pages部署自己的静态Blog
 layout: post
-title:  "Jekyll+GitHub Pages部署自己的静态Blog"
-date:   2019-02-13 11:45:00 +0800
-author: "MLeo"
-category: blog 
+date:  2019-02-13 11:45:00 +0800
+author: MLeo
+category: blog
 tags: jekyll github
 ---
+
+混了这么久，一直想拥有自己的博客，通过[jekyll](https://jekyllrb.com)和[GitHub Pages](https://pages.github.com)捣腾出了自己的博客([https://www.ichochy.com](https://www.ichochy.com))
 
 ### 一、安装jekyll
 
@@ -49,7 +51,7 @@ tags: jekyll github
 
     > 如下图：
 
-    ![WX20190213-152850](/assets/images/WX20190213-152850.png)
+    ![WX20190213-152850](http://images.ichochy.com/WX20190213-152850.png)
 
 ### 二、了解jekyll
 
@@ -124,7 +126,7 @@ tags: jekyll github
 
     > 如下图：
 
-    ![WX20190215-171119](/assets/images/WX20190215-171638.png)
+    ![WX20190215-171119](http://images.ichochy.com/WX20190215-171638.png)
 
 ### 四、创建GitHub Pages项目
 
@@ -132,14 +134,13 @@ tags: jekyll github
 
     > 如下图：
 
-    ![WX20190215-172254](/assets/images/WX20190215-172254.png)
+    ![WX20190215-172254](http://images.ichochy.com/WX20190215-172254.png)
 
 ### 五、将Blog接交到GitHub
 - 将本地写好的的`blog` pull到`github`上，在项目设置中打开`GitHub Pages`
-- 
+> 如下图：  
 
-   如下图：
-    ![WX20190218-102109](/assets/images/WX20190218-102109.png)
+    ![WX20190218-102109](http://images.ichochy.com/WX20190218-102109.png)
    
 - 选择`master branch`并保存，就完成了部署
 
@@ -154,12 +155,12 @@ tags: jekyll github
 - 进入域名配置中心，配置域名解析
     > 如下图：
 
-    ![WX20190218-095303](/assets/images/WX20190218-095303.png)
+    ![WX20190218-095303](http://images.ichochy.com/WX20190218-095303.png)
 
 - 进入`github`项目设置，设置自己的域名并保存，就完成了自定义域名设置
     > 如下图：
 
-    ![WX20190218-095906](/assets/images/WX20190218-095906.png)
+    ![WX20190218-095906](http://images.ichochy.com/WX20190218-095906.png)
 
 ### 八、开启HTTPS
 - 进入`github`项目设置，开启`Enforce HTTPS`就完成了
@@ -168,5 +169,4 @@ tags: jekyll github
 
 - 完成开启后，如下图：
 
-    ![WX20190218-104830](/assets/images/WX20190218-104830.png)
-
+    ![WX20190218-104830](http://images.ichochy.com/WX20190218-104830.png)

@@ -1,13 +1,13 @@
 ---
 title: libminipng 压缩png的swift-framework
 layout: post
-date: '2019-08-12 12:25:36 +0800'
+date:  2019-08-12 12:25:36 +0800
 author: MLeo
 category: blog
 tags: swift c pod
 ---
 
-通过lodepng解析png图片，使用pngquant算法进行压缩的swift-framework，可实现`PNG`图片的压缩，并很好的保持图片的质量，完美实现其透明效果，支持[`Cocoapods`](https://cocoapods.org)安装使用
+通过lodepng解析png图片，使用pngquant算法进行压缩的swift-framework，可实现`PNG`图片的压缩，并很好的保持图片的质量，完美实现其透明效果，支持[Cocoapods](https://cocoapods.org)安装使用
 
 
 ### 方法说明：
