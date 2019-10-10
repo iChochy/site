@@ -24,6 +24,6 @@ tags: app qiniu
 
 
 
-**下载![Cloud](http://images.ichochy.com/Cloud.png)：**
+**下载![Cloud](https://images.ichochy.com/Cloud.png)：**
 
 [https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg](https://github.com/iChochy/iUploader/releases/download/1.0.1/App.dmg)

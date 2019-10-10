@@ -14,45 +14,45 @@ tags: app dmg swift mac
 ```bash
 File->New Image->Blank Image
 ```
-![15665433118042444](http://images.ichochy.com/15665433118042444.png)  
+![15665433118042444](https://images.ichochy.com/15665433118042444.png)  
 
 **创建DMG**
-![15665435757953755](http://images.ichochy.com/15665435757953755.png)  
+![15665435757953755](https://images.ichochy.com/15665435757953755.png)  
 
 ### 2. 添加文件  
 **`在磁盘工上右键打开`**  
 ```bash
 右键->Show in Finder
 ```
-![15665436347971226](http://images.ichochy.com/15665436347971226.png)  
+![15665436347971226](https://images.ichochy.com/15665436347971226.png)  
 
 **创建快捷键**  
 ```bash
 ln -s /Applications Applications
 ```
 **完成文件添加**   
-![15665449057641887](http://images.ichochy.com/15665449057641887.png)  
+![15665449057641887](https://images.ichochy.com/15665449057641887.png)  
 
 ### 3. 排版，添加背景  
 **修改排版**  
 ```bash
 右键->Show View Options
 ```
-![156654596473115412](http://images.ichochy.com/156654596473115412.png)
+![156654596473115412](https://images.ichochy.com/156654596473115412.png)
 
 **自定义背景**  
-![15665451417533438](http://images.ichochy.com/15665451417533438.png)  
+![15665451417533438](https://images.ichochy.com/15665451417533438.png)  
 
 ### 4. 压缩DMG  
 
 **推出DMG**  
-![15665454417422579](http://images.ichochy.com/15665454417422579.png)
+![15665454417422579](https://images.ichochy.com/15665454417422579.png)
 
 **转换DMG**  
-![156654547374332110](http://images.ichochy.com/156654547374332110.png)
+![156654547374332110](https://images.ichochy.com/156654547374332110.png)
 
 **压缩DMG**  
-![156654560673824711](http://images.ichochy.com/156654560673824711.png)  
+![156654560673824711](https://images.ichochy.com/156654560673824711.png)  
 **压缩后的文件明显小于原文件，也不可再进行编辑**
 
 

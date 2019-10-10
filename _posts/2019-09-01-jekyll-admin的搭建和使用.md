@@ -15,15 +15,15 @@ tags: jekyll blog
 ### 配置
 在`_config.yml`中添加`  - jekyll-admin`  
 
-    ```
-    plugins:
+```
+plugins:
     - jekyll-admin
-    ```
+```
 
 ### 使用
 运行命令`jekyll server` 启动[`jekyll`](https://jekyllrb.com/)  
 直接访问[http://127.0.0.1:4000/admin](http://127.0.0.1:4000/admin)就可以看到[`jekyll-admin`](https://jekyll.github.io/jekyll-admin/)的使用界面  
-![15695720693585521](http://images.ichochy.com/15695720693585521.png)
+![15695720693585521](https://images.ichochy.com/15695720693585521.png)
 
 
 
