@@ -13,4 +13,4 @@ permalink: /about.html
 > GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   
 
 **微信扫一扫，关注公众号(`iChochy`)**    
-![公众号](https://images.ichochy.com/wx.jpg) 
+![Wechat](https://images.ichochy.com/wx.jpg) 
