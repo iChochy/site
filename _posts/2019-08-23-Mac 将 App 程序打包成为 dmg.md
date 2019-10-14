@@ -16,7 +16,7 @@ File->New Image->Blank Image
 ```
 ![15665433118042444](https://images.ichochy.com/15665433118042444.png)  
 
-**创建DMG**
+**创建DMG**  
 ![15665435757953755](https://images.ichochy.com/15665435757953755.png)  
 
 ### 2. 添加文件  
