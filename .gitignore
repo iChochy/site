@@ -5,3 +5,5 @@ _site
 *.swp
 CNAME
 .LocalUploadConfig
+.jekyll-cache
+
