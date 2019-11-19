@@ -51,7 +51,8 @@ public class NacosApplication {
 
 }
 ```
-2、编写服务方服务
+
+2、编写服务  
 ```java
 package com.ichochy.nacos.service;
 
@@ -113,8 +114,7 @@ public class NacosApplication {
 }
 ```
 
-2、编写调用方服务  
-调用服务  
+2、编写远程服务调用  
 ```java
 package com.ichochy.nacos.controller;
 
@@ -147,6 +147,7 @@ public class ResultController {
 
 ### 三、优化调用，使用`FeignClient`
 `pom.xml`中添加`FeignClient`支持
+
 ```
 <dependency>
     <groupId>org.springframework.cloud</groupId>
@@ -154,7 +155,49 @@ public class ResultController {
     <version>2.1.3.RELEASE</version>
 </dependency>
 ```
-通过 Spring Cloud 原生注解 `@EnableFeignClients` 开启
+
+1、通过 Spring Cloud 原生注解 `@EnableFeignClients` 开启  
+```java
+package com.ichochy.nacos;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+@EnableFeignClients
+public class NacosApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(NacosApplication.class, args);
+    }
+
+}
+```
+
+2、编写远程服务调用接口  
+```java
+package com.ichochy.nacos.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@FeignClient(value = "service-provider")
+public interface ServiceInterface {
+
+    @RequestMapping("/service/echo/{name}")
+    public String echo(@PathVariable String name);
+
+}
+```
+
+3、远程调用服务  
 ```java
 package com.ichochy.nacos.controller;
 
