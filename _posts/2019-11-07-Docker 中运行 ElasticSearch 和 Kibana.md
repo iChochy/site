@@ -19,8 +19,8 @@ docker search kibana
 
 **获取镱像(image)**
 ```bash
-docker pull elasticsearch:7.4.1     //镜像名称:Tag
-docker pull kibana:7.4.1            //镜像名称:Tag
+docker pull elasticsearch:7.4.1     #镜像名称:Tag
+docker pull kibana:7.4.1            #镜像名称:Tag
 ```
 
 ### 二、创建 docker-compose.yml
@@ -32,21 +32,23 @@ version: "3.2"
   
 services:
   elasticsearch:
-     image: elasticsearch:7.4.1             //镱像(image)
-     restart: always                        //重启方式
-     environment:
-       discovery.type: single-node          //环境变量：运行模式 单例
-     ports:
-       - "9200:9200"                        //端口映射
-       - "9300:9300"
-  kibana:
-    image: kibana:7.4.1                     //镱像(image)
-    restart: always                         //重启方式
+    container_name: elasticsearch           #容器名称
+    image: elasticsearch:7.4.1              #镱像(image)
+    restart: always                         #重启方式
     environment:
-      ELASTICSEARCH_URL: "127.0.0.1:9200"   //环境变量：elasticsearch 请求地址
-      I18N_LOCALE: "zh-CN"                  //指定中文
+      discovery.type: single-node           #环境变量：运行模式 单例
     ports:
-       - "5601:5601"                        //端口映射
+      - "9200:9200"                         #端口映射
+      - "9300:9300"
+  kibana:
+    container_name: kibana                  #容器名称
+    image: kibana:7.4.1                     #镱像(image)
+    restart: always                         #重启方式
+    environment:
+      ELASTICSEARCH_URL: "127.0.0.1:9200"   #环境变量：elasticsearch 请求地址
+      I18N_LOCALE: "zh-CN"                  #指定中文
+    ports:
+      - "5601:5601"                         #端口映射
 
 ```
 
@@ -58,9 +60,9 @@ docker-compose -f es.yml up -d
 ```
 ```bash
 docker-compose 
-                -f  //指定构建文件
-                up  //创建并启动容器
-                -d  //后台运行容器(container)，打印容器(container)ID
+                -f  #指定构建文件
+                up  #创建并启动容器
+                -d  #后台运行容器(container)，打印容器(container)ID
 ```
 
 启动完成后直接访问：[http://127.0.0.1:5601](http://127.0.0.1:5601)，进入 Kibana  
@@ -70,7 +72,7 @@ docker-compose
 *注：*注意YML文件编写，不要出现 Tab 制表符，否则导致文件解析错误，启动容器(container)失败
 
 ```bash
-//错误信息
+# 错误信息
 yaml.scanner.ScannerError: mapping values are not allowed here
 ```
 
