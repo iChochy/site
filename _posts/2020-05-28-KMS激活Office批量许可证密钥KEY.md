@@ -7,9 +7,9 @@ category: blog
 tags: office kms key gvlk
 ---
 
-Office 的所有批量许可版本（包括 Project 和 Visio）都预安装了通用批量许可密钥 (GVLK)。  
-
 在配置为支持 Office 批量激活的 KMS 主计算机上，你只需安装和启用一个 KMS 主机密钥，即可激活 Office 的所有批量许可版本。  
+
+Office 的所有批量许可版本（包括 Project 和 Visio）都预安装了通用批量许可密钥 (GVLK)。  
 
 `GVLK` 支持通过密钥管理服务 (KMS) 激活和基于 Active Directory 的激活。  
 
