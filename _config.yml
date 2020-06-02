@@ -33,7 +33,7 @@ paginate: 5
 header_pages:
  - index.html
  - main/tags.md
- - main/about.md 
+ - README.md 
 
 
 # Build settings
