@@ -50,4 +50,4 @@ tags: cdn https dns cloudfrare
 **至此，已经通过 Cloudflare 开启了 DNS、CDN、HTTPS**  
 
 ***但：**免费套餐在国内是没有快速的 CDN 节点，CDN 也就没有加速的效果了  
-*如果需要国内快速的 CDN ，可以使用企业版，但要不差钱，或使用国内合作商[百度云加速](https://su.baidu.com)
+*如果需要国内快速的 CDN ，可以使用企业版，但要不差钱，或使用国内合作商[百度云加速](https://su.baidu.com/?ic=1dR4jc)
