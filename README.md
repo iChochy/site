@@ -16,7 +16,8 @@ permalink: /about.html
 
 ### 感谢  
 [JetBrains](https://www.jetbrains.com/) 提供 [Open Source License](https://www.jetbrains.com/shop/eform/opensource)   
-[七牛云](https://www.qiniu.com/) 提供 [云存储](https://portal.qiniu.com/signup?code=3l7cpouzlru4y)
+[七牛云](https://www.qiniu.com/) 提供 [云存储](https://portal.qiniu.com/signup?code=3l7cpouzlru4y)  
+[百度云加速](https://su.baidu.com/) 提供 [CDN](https://su.baidu.com/?ic=1dR4jc)  
 
 ### 微信公众号(`iChochy`)    
-![Wechat](https://images.ichochy.com/wx.jpg) 
+![Wechat](https://images.ichochy.com/wx.jpg)  
