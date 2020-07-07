@@ -12,6 +12,11 @@
             <a class="page-link" id = "{{my_page.url}}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+          <div class = "search-link">
+            <form>
+              <input type="text" class="st-default-search-input" />
+            </form>
+          </div>
         </div>
       </nav>
     {%- endif -%}
