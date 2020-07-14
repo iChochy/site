@@ -1,6 +1,7 @@
 ---
 title: Office 批量激活的命令工具 slmgr
 layout: post
+comments: true
 date: 2020-06-05 19:22:45 +0800
 author: MLeo
 category: blog

@@ -37,6 +37,8 @@ header_pages:
  - main/tags.md
  - README.md 
 
+disqus:
+ shortname: ichochy
 
 # Build settings
 markdown: kramdown

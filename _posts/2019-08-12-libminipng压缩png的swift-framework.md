@@ -1,6 +1,7 @@
 ---
 title: libminipng 压缩png的swift-framework
 layout: post
+comments: true
 date:  2019-08-12 12:25:36 +0800
 author: MLeo
 category: blog

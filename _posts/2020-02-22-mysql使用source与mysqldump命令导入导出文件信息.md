@@ -1,6 +1,7 @@
 ---
 title: mysql 使用 source/mysqldump 命令导入/导出文件信息
 layout: post
+comments: true
 date: 2020-02-22 22:16:45 +0800
 author: MLeo
 category: blog

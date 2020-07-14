@@ -1,6 +1,7 @@
 ---
 title: Spring Cloud Alibaba Nacos Discovery 实战
 layout: post
+comments: true
 date: 2019-10-18 16:35:45 +0800
 author: MLeo
 category: blog

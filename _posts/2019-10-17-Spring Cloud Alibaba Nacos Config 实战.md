@@ -1,6 +1,7 @@
 ---
 title: Spring Cloud Alibaba Nacos Config 实战
 layout: post
+comments: true
 date: 2019-10-17 14:10:45 +0800
 author: MLeo
 category: blog

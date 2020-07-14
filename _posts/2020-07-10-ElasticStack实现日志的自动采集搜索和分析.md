@@ -1,6 +1,7 @@
 ---
 title: Elastic Stack（ElasticSearch 、 Kibana 和 Logstash） 实现日志的自动采集、搜索和分析
 layout: post
+comments: true
 date: 2020-07-10 15:28:45 +0800
 author: MLeo
 category: blog

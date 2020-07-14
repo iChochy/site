@@ -1,6 +1,7 @@
 ---
 title: Docker 中运行 ElasticSearch 和 Kibana
 layout: post
+comments: true
 date: 2019-11-07 13:24:45 +0800
 author: MLeo
 category: blog

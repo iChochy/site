@@ -1,6 +1,7 @@
 ---
 title: 认识 Spring Cloud Alibaba
 layout: post
+comments: true
 date: 2019-10-12 14:12:45 +0800
 author: MLeo
 category: blog

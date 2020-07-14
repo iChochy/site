@@ -1,6 +1,7 @@
 ---
 title: jekyll-admin的搭建和使用
 layout: post
+comments: true
 date: 2019-09-25 15:22:38 +0800
 author: MLeo
 category: blog

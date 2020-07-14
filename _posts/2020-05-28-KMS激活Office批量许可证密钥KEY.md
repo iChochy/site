@@ -1,6 +1,7 @@
 ---
 title: KMS 激活 Office 批量许可证密钥 KEY
 layout: post
+comments: true
 date: 2020-05-28 12:12:45 +0800
 author: MLeo
 category: blog

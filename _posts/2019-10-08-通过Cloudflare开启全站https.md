@@ -1,6 +1,7 @@
 ---
 title: 通过Cloudflare开启全站https
 layout: post
+comments: true
 date: 2019-10-08 14:22:45 +0800
 author: MLeo
 category: blog

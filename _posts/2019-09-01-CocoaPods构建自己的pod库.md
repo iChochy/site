@@ -1,6 +1,7 @@
 ---
 title: CocoaPods 构建自己的 Pod 库
 layout: post
+comments: true
 date: 2019-09-01 12:32:55 +0800
 author: MLeo
 category: blog
