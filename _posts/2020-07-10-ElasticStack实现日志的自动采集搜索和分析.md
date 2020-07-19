@@ -160,7 +160,7 @@ output {
 在logstash的监控的文件路径下动态添加日志文件，日志就可以自动采集到 elasticsearch
 ```
 touch web.log   #创建日志文件
-echo "www.ichochy.com" > web.log  #添加日志信息
+echo "www.ichochy.com" > web.log  #添加日志信息
 ```
 
 查看 logstash 日志信息可以看到打印的日志   
