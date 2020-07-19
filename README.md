@@ -14,10 +14,14 @@ permalink: /about.html
 > 网站：[https://www.ichochy.com](https://www.ichochy.com)  
 > GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   
 
+### 微信公众号(`iChochy`)    
+![Wechat](https://images.ichochy.com/wx.jpg)  
+
 ### 感谢  
 [七牛云](https://www.qiniu.com/) 提供 [云存储](https://portal.qiniu.com/signup?code=3l7cpouzlru4y)  
 [百度云加速](https://su.baidu.com/) 提供 [CDN](https://su.baidu.com/?ic=1dR4jc)  
 [JetBrains](https://www.jetbrains.com/) 提供 [Open Source License](https://www.jetbrains.com/shop/eform/opensource)   
 
-### 微信公众号(`iChochy`)    
-![Wechat](https://images.ichochy.com/wx.jpg)  
+### 友情链接  
+[Kaciras' Blog](https://blog.kaciras.com)  
+[Jet's Notes](https://jetyu.me/)
