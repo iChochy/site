@@ -7,8 +7,6 @@ permalink: /about.html
 ### 简介：  
 > 本人是一个80后的码农，为人比较低调，会点Java和Swift，想在网络上留下点自己的记忆，创建当前网站和大家分享！  
 
-患者：[慢性粒单核细胞白血病(CMML)](https://www.ichochy.com/blog/2020/04/25/慢性粒单核细胞白血病-CMML.html) 
-
 ### 联系方式：  
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
 > 网站：[https://www.ichochy.com](https://www.ichochy.com)  
@@ -24,4 +22,6 @@ permalink: /about.html
 
 ### 友情链接  
 [Kaciras' Blog](https://blog.kaciras.com)  
-[Jet's Notes](https://jetyu.me/)
+[Jet's Notes](https://jetyu.me/)  
+[檀鹏程个人博客](https://marksanders.cn)  
+[V2方圆](https://www.v2fy.com/)  
