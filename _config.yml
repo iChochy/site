@@ -8,14 +8,14 @@ show_excerpts: true
 timezone: Asia/Shanghai
 description: 码农小站，写点Java、Swift和感悟；微信公众号：iChochy
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.ichochy.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ichochy.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 baidu_push: true
 360_push: false
 
-google_analytics: UA-148465786-1
+# google_analytics: UA-148465786-1
 
-baidu_analytics: 6c96b4a33763ee94253645ea9215240b
+# baidu_analytics: 6c96b4a33763ee94253645ea9215240b
 
 51_analytics: 20857737
 

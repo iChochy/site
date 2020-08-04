@@ -20,8 +20,3 @@ permalink: /about.html
 [百度云加速](https://su.baidu.com/) 提供 [CDN](https://su.baidu.com/?ic=1dR4jc)  
 [JetBrains](https://www.jetbrains.com/) 提供 [Open Source License](https://www.jetbrains.com/shop/eform/opensource)   
 
-### 友情链接  
-[Kaciras' Blog](https://blog.kaciras.com)  
-[Jet's Notes](https://jetyu.me/)  
-[檀鹏程个人博客](https://marksanders.cn)  
-[V2方圆](https://www.v2fy.com/)  
